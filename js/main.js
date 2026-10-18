@@ -24,7 +24,7 @@ if (formulario) {
   formulario.addEventListener("submit", (e) => {
     e.preventDefault();
     const datos = new FormData(formulario);
-    const asunto = `Solicitud de demo - ${datos.get("empresa") || datos.get("nombre")}`;
+    const asunto = `Contacto desde la web - ${datos.get("empresa") || datos.get("nombre")}`;
     const cuerpo = [
       `Nombre: ${datos.get("nombre")}`,
       `Empresa: ${datos.get("empresa") || "-"}`,
