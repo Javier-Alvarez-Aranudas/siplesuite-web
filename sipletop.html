@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SipleTop CAD · Topografía para AutoCAD: puntos, MDT, perfiles y cubicaciones</title>
+  <meta name="description" content="SipleTop CAD: complemento de topografía para AutoCAD. Importa libretas de campo, crea el MDT con líneas de rotura, curvas de nivel, perfiles, rasantes, plataformas y cubicaciones.">
+  <link rel="canonical" href="https://siplesuit.es/sipletop.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SipleTop CAD · Topografía dentro de AutoCAD">
+  <meta property="og:description" content="Puntos, MDT, curvas, perfiles, rasantes, plataformas y cubicaciones con comandos en español.">
+  <meta property="og:url" content="https://siplesuit.es/sipletop.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html">SIPLE<span>SUITE</span></a>
+      <button class="boton-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="siplecost.html">SipleCost</a>
+        <a href="siplecontrol.html">SipleControl</a>
+        <a href="sipletop.html" aria-current="page">SipleTop</a>
+        <a href="index.html#autor">Quién hay detrás</a>
+        <a class="boton boton--principal" href="#contacto">Solicitar demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="hero">
+      <div class="contenedor">
+        <div>
+          <span class="etiqueta">SipleTop CAD · Complemento para AutoCAD</span>
+          <h1>Toda la topografía de la obra, <em>dentro de tu AutoCAD</em></h1>
+          <p class="entradilla">Importa la libreta de campo, genera el terreno, saca curvas, perfiles y rasantes, diseña plataformas y cubica, sin salir del CAD que ya usas y con comandos en español.</p>
+          <div class="botones">
+            <a class="boton boton--principal" href="#contacto">Quiero probarlo</a>
+            <a class="boton boton--secundario" href="#comandos">Ver los 44 comandos</a>
+          </div>
+        </div>
+        <figure class="figura">
+          <div class="ventana">
+            <div class="ventana__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="img/sipletop/terreno.svg" width="900" height="520"
+                 alt="Ilustración de un modelo digital del terreno con triangulación, curvas de nivel y puntos topográficos con número, cota y código">
+          </div>
+          <figcaption>Ilustración con los colores de capa de SipleTop CAD</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="franja">
+      <div class="contenedor">
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>44 comandos operativos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Menú y barras de herramientas propias</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Dibujos estándar, sin objetos raros</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>CSV, TXT y LandXML</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Manual con ejercicios</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="seccion" id="funciones">
+      <div class="contenedor">
+        <div class="cabecera-seccion centrado">
+          <span class="etiqueta">Funciones</span>
+          <h2>Del levantamiento a la cubicación</h2>
+          <p class="entradilla">El flujo de trabajo completo del topógrafo y del técnico de obra civil, paso a paso.</p>
+        </div>
+
+        <div class="bloque">
+          <div>
+            <h3>Puntos que entienden tu libreta</h3>
+            <p>Importa libretas en CSV o TXT y SipleTop deduce solo qué columna es cada cosa (X, Y, Z, número, código…), el separador y si los decimales van con coma o con punto. Si el archivo no tiene cabecera, te enseña cómo va a leer la primera línea antes de importar.</p>
+            <ul class="lista-check">
+              <li>Cada punto es un único bloque con número, cota y código, cada uno en su capa</li>
+              <li>Crear, interpolar, editar, renumerar y unir puntos por código</li>
+              <li>Resumen del levantamiento y tabla de puntos nativa en el plano</li>
+            </ul>
+          </div>
+          <figure class="figura">
+            <div class="ventana">
+              <div class="ventana__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="img/sipletop/terreno.svg" width="900" height="520" loading="lazy" alt="Ilustración de puntos topográficos rotulados sobre el terreno">
+            </div>
+            <figcaption>Ilustración</figcaption>
+          </figure>
+        </div>
+
+        <div class="bloque bloque--invertido">
+          <div>
+            <h3>Terreno, curvas y perfiles</h3>
+            <p>Genera el modelo digital del terreno con líneas de rotura forzadas, guárdalo en el dibujo y regenéralo cuando cambien los puntos. Saca las curvas de nivel con su equidistancia y curvas maestras, y los perfiles longitudinales y transversales de cualquier eje.</p>
+            <ul class="lista-check">
+              <li>Triangulación con líneas de rotura y edición del MDT</li>
+              <li>Rasante con acuerdos verticales, longitudinal y planta acotados</li>
+              <li>Visor de transversales y exportación de perfiles a CSV</li>
+            </ul>
+          </div>
+          <figure class="figura">
+            <div class="ventana">
+              <div class="ventana__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="img/sipletop/perfil.svg" width="900" height="380" loading="lazy" alt="Ilustración de un perfil longitudinal con el terreno, la rasante y un acuerdo vertical">
+            </div>
+            <figcaption>Ilustración</figcaption>
+          </figure>
+        </div>
+
+        <div class="bloque">
+          <div>
+            <h3>Plataformas, muros, colectores y cubicación</h3>
+            <p>Diseña explanadas y viales con sección tipo sobre la rasante: bombeos, taludes de desmonte y terraplén, cunetas y paquete de firme. Dibuja muros y colectores con su zanja, y cubica por diferencia de perfiles o de superficies.</p>
+            <ul class="lista-check">
+              <li>Explanada por polilínea y sección tipo con transversales por PK</li>
+              <li>Muros con cuadro y cimentación; colectores con pozos, pendientes y zanja</li>
+              <li>Volúmenes de desmonte y terraplén en listado y en el plano</li>
+            </ul>
+          </div>
+          <figure class="figura">
+            <div class="ventana">
+              <div class="ventana__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="img/sipletop/seccion.svg" width="900" height="380" loading="lazy" alt="Ilustración de una sección transversal de plataforma con bombeo, talud de desmonte y talud de terraplén">
+            </div>
+            <figcaption>Ilustración</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--suave" id="comandos">
+      <div class="contenedor">
+        <div class="cabecera-seccion centrado">
+          <span class="etiqueta">Comandos</span>
+          <h2>44 herramientas, organizadas como trabajas</h2>
+          <p class="entradilla">Todas están en el menú SIPLETOP CAD y en sus barras de herramientas, y también puedes escribirlas en la línea de órdenes.</p>
+        </div>
+        <div class="comandos">
+          <article>
+            <h3><img src="img/sipletop/stptimp.png" alt="">Puntos</h3>
+            <ul>
+              <li><code>STPTIMP</code>Importar puntos</li>
+              <li><code>STPTNEW</code>Crear puntos</li>
+              <li><code>STPTINT</code>Interpolar</li>
+              <li><code>STPTEDIT</code>Editar</li>
+              <li><code>STPTNUM</code>Numerar</li>
+              <li><code>STPTINFO</code>Información</li>
+              <li><code>STPTTAB</code>Tabla de puntos</li>
+              <li><code>STPTUNIR</code>Unir por código</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/sttin.png" alt="">Terreno (MDT)</h3>
+            <ul>
+              <li><code>STMDTNEW</code>Crear MDT</li>
+              <li><code>STBREAK</code>Líneas de rotura</li>
+              <li><code>STTIN</code>Triangulación</li>
+              <li><code>STMDTEDIT</code>Editar MDT</li>
+              <li><code>STMDTSAVE</code>Guardar terreno</li>
+              <li><code>STMDTLOAD</code>Abrir terreno</li>
+              <li><code>STMDTINFO</code>Información</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/stcvnew.png" alt="">Curvas de nivel</h3>
+            <ul>
+              <li><code>STCVNEW</code>Crear curvas</li>
+              <li><code>STCVEQUID</code>Equidistancia</li>
+              <li><code>STCVMAESTRA</code>Curva maestra</li>
+              <li><code>STCVEDIT</code>Editar curvas</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/stperflong.png" alt="">Perfiles</h3>
+            <ul>
+              <li><code>STPERFLONG</code>Longitudinal</li>
+              <li><code>STPERFRAS</code>Rasante</li>
+              <li><code>STRASANTE</code>Rasante con acuerdos</li>
+              <li><code>STPERFTRANS</code>Transversales</li>
+              <li><code>STVISOR</code>Visor de transversales</li>
+              <li><code>STPERFMUESTRA</code>Visor de muestreo</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/stplatsec.png" alt="">Plataformas</h3>
+            <ul>
+              <li><code>STPLATPOL</code>Explanada</li>
+              <li><code>STPLATSEC</code>Sección tipo</li>
+              <li><code>STMURO</code>Muro por polilínea</li>
+              <li><code>STCOLECTOR</code>Colector</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/stcubsup.png" alt="">Cubicaciones</h3>
+            <ul>
+              <li><code>STCUBPERF</code>Por perfiles</li>
+              <li><code>STCUBSUP</code>Por superficies</li>
+              <li><code>STCUBLIST</code>Listado</li>
+              <li><code>STCUBDIB</code>Dibujar</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/stcoord.png" alt="">Cálculos (COGO)</h3>
+            <ul>
+              <li><code>STCOORD</code>Coordenadas</li>
+              <li><code>STDIST</code>Distancias</li>
+              <li><code>STANG</code>Ángulos</li>
+              <li><code>STAZI</code>Acimuts</li>
+              <li><code>STINTER</code>Intersecciones</li>
+              <li><code>STRAD</code>Radiaciones</li>
+              <li><code>STAREA</code>Área y perímetro</li>
+            </ul>
+          </article>
+          <article>
+            <h3><img src="img/sipletop/stiosup.png" alt="">Importar / Exportar</h3>
+            <ul>
+              <li><code>STIOPTS</code>Puntos</li>
+              <li><code>STIOSUP</code>Superficies LandXML</li>
+              <li><code>STIOPERF</code>Perfiles a CSV</li>
+              <li><code>STIODATOS</code>Libreta de campo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--oscura">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <span class="etiqueta">Por qué SipleTop CAD</span>
+          <h2>Pensado por alguien que pisa la obra</h2>
+        </div>
+        <div class="rejilla rejilla--3">
+          <article>
+            <h3>Tus planos se abren en cualquier parte</h3>
+            <p style="color:#b7c3dc">Los puntos son bloques estándar con atributos, no objetos propietarios: el dibujo se abre sin avisos en cualquier AutoCAD, tenga SipleTop instalado o no.</p>
+          </article>
+          <article>
+            <h3>Sin cambiar de programa</h3>
+            <p style="color:#b7c3dc">Trabajas en el CAD que ya conoces, con sus capas, sus estilos y tus plantillas. SipleTop solo añade las herramientas topográficas.</p>
+          </article>
+          <article>
+            <h3>Comprueba antes de calcular</h3>
+            <p style="color:#b7c3dc">Resúmenes de extensión, cotas y códigos para detectar columnas cruzadas o erratas de la libreta antes de triangular.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--suave">
+      <div class="contenedor">
+        <div class="cabecera-seccion centrado">
+          <span class="etiqueta">Ficha técnica</span>
+          <h2>Requisitos</h2>
+        </div>
+        <div class="ficha">
+          <div><strong>CAD</strong>AutoCAD (probado en 2024). ZWCAD en pruebas</div>
+          <div><strong>Sistema</strong>Windows de 64 bits</div>
+          <div><strong>Formatos</strong>CSV, TXT y LandXML</div>
+          <div><strong>Instalación</strong>Se carga sola al abrir AutoCAD</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--suave" id="contacto">
+      <div class="contenedor">
+        <div class="cta">
+          <div>
+            <span class="etiqueta">Hablemos</span>
+            <h2>Prueba SipleTop CAD con un levantamiento tuyo</h2>
+            <p>Te lo enseño en una videollamada de 20 minutos con tus puntos o con los ejemplos que trae el programa.</p>
+            <p>O escríbeme directamente a <a href="mailto:siplecost@gmail.com" style="color:#fff">siplecost@gmail.com</a></p>
+          </div>
+          <form class="formulario" id="formulario-contacto">
+            <label>Nombre<input name="nombre" required autocomplete="name"></label>
+            <label>Empresa<input name="empresa" autocomplete="organization"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+            <label>¿Qué trabajos de topografía haces?<textarea name="mensaje"></textarea></label>
+            <label class="privacidad"><input type="checkbox" required> He leído y acepto la <a href="legal.html#privacidad" style="color:#c9d3e6">política de privacidad</a>.</label>
+            <button class="boton boton--principal" type="submit">Solicitar demo</button>
+            <small>Al enviar se abrirá tu programa de correo con el mensaje preparado.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <a class="logo" href="index.html">SIPLE<span>SUITE</span></a>
+        <p style="margin-top:12px">Software técnico para la gestión de obras de construcción.</p>
+      </div>
+      <div>
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="siplecost.html">SipleCost</a></li>
+          <li><a href="siplecontrol.html">SipleControl</a></li>
+          <li><a href="sipletop.html">SipleTop CAD</a></li>
+          <li><a href="index.html#productos">SipleInstal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:siplecost@gmail.com">siplecost@gmail.com</a></li>
+          <li><a href="index.html#contacto">Solicitar demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="legal.html#aviso">Aviso legal</a></li>
+          <li><a href="legal.html#privacidad">Privacidad</a></li>
+          <li><a href="legal.html#cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <p class="pie__legal">© <span data-anio>2026</span> SipleSuite. Todos los derechos reservados. Esta web no usa cookies de seguimiento.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

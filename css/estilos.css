@@ -244,6 +244,20 @@ p { margin: 0 0 1em; }
 .ficha div { background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 22px; }
 .ficha strong { display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--texto-suave); margin-bottom: 6px; }
 
+/* Comandos de SipleTop CAD */
+.comandos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.comandos article { background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 22px; }
+.comandos h3 { font-size: 1.05rem; display: flex; align-items: center; gap: 10px; }
+.comandos h3 img { width: 32px; height: 32px; image-rendering: pixelated; border-radius: 6px; }
+.comandos ul { list-style: none; margin: 0; padding: 0; font-size: .92rem; color: var(--texto-suave); }
+.comandos li { padding: 3px 0; }
+.comandos code { font-family: Consolas, monospace; font-size: .82rem; color: var(--acero); margin-right: 6px; }
+.figura { margin: 0; }
+.figura figcaption { font-size: .8rem; color: var(--texto-suave); margin-top: 8px; text-align: right; }
+.hero .figura figcaption { color: #8e9bb8; }
+@media (max-width: 980px) { .comandos { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) { .comandos { grid-template-columns: 1fr; } }
+
 /* Pie */
 .pie { background: var(--navy-950); color: #8e9bb8; padding: 56px 0 32px; font-size: .92rem; }
 .pie .contenedor { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
