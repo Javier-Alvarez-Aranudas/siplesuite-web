@@ -43,8 +43,7 @@
           <h1>Presupuesta, contrata y <em>controla</em> cada euro de la obra</h1>
           <p class="entradilla">Precio de venta, precio objetivo, precio contratado y coste real de cada partida, en una sola pantalla. Así sabes qué margen te queda antes de que sea tarde para corregirlo.</p>
           <div class="botones">
-            <a class="boton boton--principal" href="#contacto">Me interesa</a>
-            <a class="boton boton--secundario" href="#funciones">Ver funciones</a>
+            <a class="boton boton--principal" href="#funciones">Ver funciones</a>
           </div>
         </div>
         <div class="ventana">
@@ -61,7 +60,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Importa y exporta BC3</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Importa presupuestos en PDF</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Informes en PDF y Excel</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Sin conexión ni cuotas de nube</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Manual y prácticas guiadas</li>
         </ul>
       </div>
     </div>
@@ -114,6 +113,7 @@
               <li>Asistente para montar descompuestos por familias</li>
               <li>Banco de precios con buscador, para todas tus obras</li>
               <li>Carga bancos de precios externos en BC3</li>
+              <li>Trae partidas del banco directamente a un capítulo de la obra</li>
             </ul>
           </div>
           <div class="ventana">
@@ -140,12 +140,13 @@
 
         <div class="bloque">
           <div>
-            <h3>Certificaciones a origen y facturación</h3>
+            <h3>Certificaciones y facturación</h3>
             <p>Relaciones valoradas con lo certificado anterior, lo actual y el total acumulado por partida. Las facturas al cliente salen de las certificaciones, con su anexo en PDF.</p>
             <ul class="lista-check">
               <li>Porcentajes e importes calculados automáticamente</li>
               <li>Control de lo pendiente de certificar y de facturar</li>
-              <li>Facturas con los datos de tu empresa y del cliente</li>
+              <li>Facturas con los datos de la empresa y del cliente</li>
+              <li>Certificaciones de industriales por porcentaje a origen o por importe, con proforma y registro de su factura</li>
             </ul>
           </div>
           <div class="ventana">
@@ -182,8 +183,8 @@
     <section class="seccion seccion--suave">
       <div class="contenedor">
         <div class="cabecera-seccion centrado">
-          <span class="etiqueta">Ficha técnica</span>
-          <h2>Requisitos</h2>
+          <span class="etiqueta">Detalles técnicos</span>
+          <h2>Cómo está hecho</h2>
         </div>
         <div class="ficha">
           <div><strong>Sistema</strong>Windows 10 y 11</div>
@@ -202,7 +203,7 @@
         </div>
         <div class="faq">
           <details>
-            <summary>¿Puedo usar los presupuestos que tengo en Presto u otros programas?</summary>
+            <summary>¿Lee presupuestos hechos con otros programas?</summary>
             <p>Sí. SipleCost importa y exporta el formato estándar BC3 (FIEBDC-3), el que generan la mayoría de programas de presupuestos. También puede importar presupuestos y mediciones en PDF.</p>
           </details>
           <details>
@@ -213,32 +214,16 @@
             <summary>¿Mis datos salen de mi ordenador?</summary>
             <p>No. Las obras y tu banco de precios se guardan en tu equipo. Tú decides dónde guardarlos y cómo hacer copias de seguridad.</p>
           </details>
-          <details>
-            <summary>¿Puedo probarlo?</summary>
-            <p>Sí. Estoy buscando empresas que quieran probarlo con obras reales. Escríbeme y te lo enseño con una obra de ejemplo o con una tuya.</p>
-          </details>
         </div>
       </div>
     </section>
 
     <section class="seccion seccion--suave" id="contacto">
-      <div class="contenedor">
-        <div class="cta">
-          <div>
-            <span class="etiqueta">Hablemos</span>
-            <h2>¿Te interesa SipleCost?</h2>
-            <p>Si trabajas en obra y te gustaría verlo funcionando, probarlo o simplemente darme tu opinión, escríbeme. Me ayuda mucho saber qué te parece.</p>
-            <p>O escríbeme directamente a <a href="mailto:siplecost@gmail.com" style="color:#fff">siplecost@gmail.com</a></p>
-          </div>
-          <form class="formulario" id="formulario-contacto">
-            <label>Nombre<input name="nombre" required autocomplete="name"></label>
-            <label>Empresa<input name="empresa" autocomplete="organization"></label>
-            <label>Email<input name="email" type="email" required autocomplete="email"></label>
-            <label>¿Qué te gustaría controlar mejor?<textarea name="mensaje"></textarea></label>
-            <label class="privacidad"><input type="checkbox" required> He leído y acepto la <a href="legal.html#privacidad" style="color:#c9d3e6">política de privacidad</a>.</label>
-            <button class="boton boton--principal" type="submit">Enviar mensaje</button>
-            <small>Al enviar se abrirá tu programa de correo con el mensaje preparado.</small>
-          </form>
+      <div class="contenedor" style="max-width:820px">
+        <div class="cabecera-seccion centrado">
+          <span class="etiqueta">Contacto</span>
+          <h2>¿Quieres comentarlo?</h2>
+          <p class="entradilla">Si te interesa el proyecto o quieres darme tu opinión, escríbeme a <a href="mailto:siplecost@gmail.com">siplecost@gmail.com</a>.</p>
         </div>
       </div>
     </section>
@@ -249,7 +234,7 @@
     <div class="contenedor">
       <div>
         <a class="logo" href="index.html">SIPLE<span>SUITE</span></a>
-        <p style="margin-top:12px">Software técnico para la gestión de obras de construcción.</p>
+        <p style="margin-top:12px">Proyectos de software para construcción de Javier Álvarez.</p>
       </div>
       <div>
         <h4>Programas</h4>

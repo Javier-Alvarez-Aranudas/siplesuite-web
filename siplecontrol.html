@@ -43,8 +43,7 @@
           <h1>Planifica la obra y <em>anticipa</em> la caja, los contratos y las compras</h1>
           <p class="entradilla">Un planning que no solo dice cuándo, sino cuánto: cada tarea lleva su venta, su coste, su industrial y su avance. Con eso SipleControl calcula el flujo de caja y te avisa de lo que hay que contratar y pedir a tiempo.</p>
           <div class="botones">
-            <a class="boton boton--principal" href="#contacto">Me interesa</a>
-            <a class="boton boton--secundario" href="#funciones">Ver funciones</a>
+            <a class="boton boton--principal" href="#funciones">Ver funciones</a>
           </div>
         </div>
         <div class="ventana">
@@ -61,7 +60,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Diagrama de Gantt</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Flujo de caja previsto y real</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Exporta a Excel y CSV</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Sin conexión ni cuotas de nube</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Manual y prácticas guiadas</li>
         </ul>
       </div>
     </div>
@@ -79,9 +78,10 @@
             <h3>Planning con diagrama de Gantt</h3>
             <p>Organiza la obra en paquetes y tareas con duración, fechas y vínculos entre ellas. Cada tarea lleva su importe de venta, su coste, el industrial que la ejecuta y el porcentaje de avance.</p>
             <ul class="lista-check">
-              <li>Vínculos fin-inicio entre tareas</li>
+              <li>Vínculos fin-inicio: al cambiar fechas o duración, las tareas vinculadas se mueven en cadena</li>
               <li>Agrupar, mover y renombrar paquetes y tareas</li>
               <li>Zoom del calendario y vista solo Gantt</li>
+              <li>Impresión en A3 o A4 con vista previa, datos de la obra y numeración de páginas</li>
             </ul>
           </div>
           <div class="ventana">
@@ -96,7 +96,7 @@
             <p>A partir del planning, SipleControl reparte la venta y el coste en el tiempo y dibuja la curva de tesorería acumulada. Sabes qué semanas vas a necesitar financiación antes de que lleguen.</p>
             <ul class="lista-check">
               <li>Venta, coste y balance, acumulados o por periodo</li>
-              <li>Comparación previsto frente a real</li>
+              <li>Comparación previsto frente a real, con la venta, el coste y las fechas reales sacados del diario y de las compras</li>
               <li>Filtro por paquete o industrial, agrupado por semanas o meses</li>
               <li>Resumen del margen y exportación a Excel y CSV</li>
             </ul>
@@ -114,7 +114,8 @@
             <ul class="lista-check">
               <li>Fichas por paquete con el estado de cada contrato</li>
               <li>Aviso de plazo hasta el inicio de la tarea</li>
-              <li>Selección de industriales candidatos</li>
+              <li>Industriales candidatos con autocompletado y presupuestos pedidos</li>
+              <li>Avisos de la obra: compras que llegan tarde, notas críticas y contratos sin firmar</li>
             </ul>
           </div>
           <div class="ventana">
@@ -147,6 +148,7 @@
               <li>Fecha límite calculada desde el planning</li>
               <li>Cuenta atrás y aviso de pedidos urgentes</li>
               <li>Control de entregas por proveedor</li>
+              <li>Coste de cada compra y totales</li>
             </ul>
           </div>
           <div class="ventana">
@@ -183,8 +185,8 @@
     <section class="seccion seccion--suave">
       <div class="contenedor">
         <div class="cabecera-seccion centrado">
-          <span class="etiqueta">Ficha técnica</span>
-          <h2>Requisitos</h2>
+          <span class="etiqueta">Detalles técnicos</span>
+          <h2>Cómo está hecho</h2>
         </div>
         <div class="ficha">
           <div><strong>Sistema</strong>Windows 10 y 11</div>
@@ -196,23 +198,11 @@
     </section>
 
     <section class="seccion seccion--suave" id="contacto">
-      <div class="contenedor">
-        <div class="cta">
-          <div>
-            <span class="etiqueta">Hablemos</span>
-            <h2>¿Te interesa SipleControl?</h2>
-            <p>Si planificas obras y te gustaría verlo funcionando, probarlo o simplemente darme tu opinión, escríbeme. Me ayuda mucho saber qué te parece.</p>
-            <p>O escríbeme directamente a <a href="mailto:siplecost@gmail.com" style="color:#fff">siplecost@gmail.com</a></p>
-          </div>
-          <form class="formulario" id="formulario-contacto">
-            <label>Nombre<input name="nombre" required autocomplete="name"></label>
-            <label>Empresa<input name="empresa" autocomplete="organization"></label>
-            <label>Email<input name="email" type="email" required autocomplete="email"></label>
-            <label>¿Qué te gustaría controlar mejor?<textarea name="mensaje"></textarea></label>
-            <label class="privacidad"><input type="checkbox" required> He leído y acepto la <a href="legal.html#privacidad" style="color:#c9d3e6">política de privacidad</a>.</label>
-            <button class="boton boton--principal" type="submit">Enviar mensaje</button>
-            <small>Al enviar se abrirá tu programa de correo con el mensaje preparado.</small>
-          </form>
+      <div class="contenedor" style="max-width:820px">
+        <div class="cabecera-seccion centrado">
+          <span class="etiqueta">Contacto</span>
+          <h2>¿Quieres comentarlo?</h2>
+          <p class="entradilla">Si te interesa el proyecto o quieres darme tu opinión, escríbeme a <a href="mailto:siplecost@gmail.com">siplecost@gmail.com</a>.</p>
         </div>
       </div>
     </section>
@@ -223,7 +213,7 @@
     <div class="contenedor">
       <div>
         <a class="logo" href="index.html">SIPLE<span>SUITE</span></a>
-        <p style="margin-top:12px">Software técnico para la gestión de obras de construcción.</p>
+        <p style="margin-top:12px">Proyectos de software para construcción de Javier Álvarez.</p>
       </div>
       <div>
         <h4>Programas</h4>
